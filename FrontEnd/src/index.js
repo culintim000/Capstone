@@ -1,17 +1,62 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import App from "./App";
+import './index.css'
+// import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {Animals, Navbar} from './components'
+import {Footer, Services, Header, WhyUs, Amenities, SignUp, SignIn} from './containers'
+
+ReactDOM.render(
+    <Router>
+        {/*<div className='gradient__bg'>*/}
+        {/*<Navbar/>*/}
+        {/*</div>*/}
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/sign-up" element={<SignUpPage />}/>
+            <Route path="/sign-in" element={<SignInPage />}/>
+        </Routes>
+    </Router>,
+
+    document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Home() {
+    return (
+        <div className='App'>
+            <div className='gradient__bg'>
+                <Navbar/>
+                <Header/>
+            </div>
+            <Animals/>
+            <WhyUs/>
+            <Services/>
+            <Amenities/>
+            <Footer/>
+        </div>
+    );
+}
+
+function SignUpPage() {
+    return (
+        <div className='App'>
+            <div className='gradient__bg__logInSignUp'>
+                <Navbar/>
+            </div>
+            <SignUp/>
+        </div>
+    );
+}
+
+function SignInPage() {
+    return (
+        <div className='App'>
+            <div className='gradient__bg__logInSignUp'>
+                <Navbar/>
+            </div>
+            <SignIn/>
+        </div>
+    );
+}

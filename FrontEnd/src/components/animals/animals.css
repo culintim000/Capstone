@@ -1,0 +1,23 @@
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.animals div {
+    flex: 1;
+    max-width: 50px;
+    min-width: 20px;
+    margin: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animals img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}

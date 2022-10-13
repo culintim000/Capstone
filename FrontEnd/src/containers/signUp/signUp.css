@@ -1,0 +1,45 @@
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.input-container label {
+    font-size: 15px;
+    color: var(--color-text);
+    margin-right: 1rem;
+    font-family: var(--font-family);
+}
+
+.input-container input {
+    font-size: 18px;
+    color: black;
+    /*margin-right: 1rem;*/
+    font-family: var(--font-family);
+    max-height: 35px;
+}
+
+.button-container button{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    /*line-height: 25px;*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    /*width: 100%;*/
+    width: auto;
+}
