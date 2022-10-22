@@ -1,0 +1,87 @@
+.outer{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.receipt{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.receipt{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.details {
+    padding: 1rem;
+    border: 1px solid white;
+}
+
+.detailsTitle {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.detail{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.expDate{
+    display: flex;
+    flex-direction: row;
+}
+
+.expDate input{
+    width: 50px;
+}
+
+.slash{
+    background-color: white;
+    color: black;
+}
+
+.dateAndCvv{
+    display: flex;
+    flex-direction: row;
+}
+
+.cvv{
+    width: 80px;
+}
+
+.postal{
+    width: 80px;
+}
+
+/*.input-container{*/
+/*    align-items: center;*/
+/*}*/
+
+.button-container button{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 70%;
+    align-self: center;
+}

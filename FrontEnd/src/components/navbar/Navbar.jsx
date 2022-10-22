@@ -43,7 +43,7 @@ const Navbar =
               </div>
               <div className="navbar-menu_container-links-sign">
                 <p><Link to="/sign-in">Sign In</Link></p>
-                <button type="button"><Link to="/sign-in">Sign Up</Link> </button>
+                <button type="button"><Link to="/sign-up">Sign Up</Link> </button>
               </div>
             </div>
           )}
@@ -52,10 +52,5 @@ const Navbar =
     )
 
   }
-
-const NavigateToSignUp = () => {
-    console.log("Navigate to sign up");
-    // Navigate("/sign-up");
-};
 
 export default Navbar

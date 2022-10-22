@@ -14,6 +14,7 @@ const Footer = () => (
         <p>Address: 126 Red Pkwy. Salt Lake City, UT 84111</p>
         <p>Office Hours: 8 a.m. - 6 p.m.</p>
         <p>Drop off/Pick up Times: 5 a.m. - 9 p.m.</p>
+        <p>Cancellation Fee - $20</p>
       </div>
 
       <div className="footer-copyright">

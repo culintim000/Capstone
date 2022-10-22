@@ -1,0 +1,53 @@
+server:
+  port: 8888
+ 
+eureka:
+  client:
+    serviceUrl:
+      # defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka:8761/eureka
+
+spring:
+  application:
+    name: gateway-service-pro290
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      default-filters:
+        #This is to prevent two different cors headers being sent.
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+  # cloud:
+  #   gateway:
+  #     routes:
+  #     - id: employeeModule
+  #       uri: lb://FIRST-SERVICE
+  #       predicates:
+  #       - Path=/employee/**
+        
+  #     - id: consumerModule
+  #       uri: lb://SECOND-SERVICE
+  #       predicates:
+  #       - Path=/consumer/**
+
+  #     - id: dotnetAPI
+  #       uri: lb://DOTNET-API        
+  #       predicates:
+  #       - Path=/api1/**        
+  #       #you can now hit this api gateway via: http://localhost:8888/api1/abc
+
+  #     - id: dotnetAPI2-a
+  #       uri: lb://DOTNET-API2
+  #       predicates:
+  #       - Path=/**
+  #       #you can now hit endpoint like: http://localhost:8888/test1 this somehow maps to the minimal api endpoints
+
+  #     - id: dotnetAPI2-b
+  #       uri: lb://DOTNET-API2
+  #       predicates:
+  #       - Path=/api2/**
+  #       #you can now hit http://localhost:8888/api2

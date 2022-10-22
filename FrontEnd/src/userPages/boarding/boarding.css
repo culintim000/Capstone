@@ -1,0 +1,124 @@
+.outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: #ec5757;
+    max-width: available;
+}
+
+.from{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+
+}
+
+.form_container label {
+    font-size: 17px;
+    color: var(--color-text);
+    font-family: var(--font-family);
+}
+
+.form_container input, select {
+    font-size: 18px;
+    color: black;
+    font-family: var(--font-family);
+    max-height: 35px;
+    align-content: center;
+}
+
+.form_container textarea {
+    font-size: 18px;
+    color: black;
+    font-family: var(--font-family);
+    min-height: 35px;
+    align-content: center;
+}
+
+h1{
+    color: var(--gradient-text);
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+}
+
+.schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule_calendar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule_time{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule select{
+    align-self: center;
+}
+
+.button-container button{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.endError{
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .outer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .form_container input, select {
+        max-width: available;
+    }
+
+    .form_container textarea {
+        max-width: available;
+    }
+
+    .schedule_calendar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

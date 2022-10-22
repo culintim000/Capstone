@@ -1,3 +1,18 @@
+.outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: #ec5757;
+    max-width: available;
+}
+
 .form {
     width: 100%;
     display: flex;

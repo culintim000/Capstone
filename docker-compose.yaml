@@ -1,0 +1,136 @@
+version: '3.8'
+
+networks:
+  timscapstone.1:
+    external: false
+
+services:
+  sqlserver:
+    container_name: sqlserver
+    build:
+      context: ./sql/
+      dockerfile: sqlsetup.dockerfile
+    image: sqlserver:1
+    ports:
+      - "1431:1433"
+    networks:
+      - timscapstone.1
+    environment:
+      SA_PASSWORD: "abc123!!@"
+      ACCEPT_EULA: "Y"
+
+  # message-queue:
+  #   container_name: message-queue
+  #   image: rabbitmq:3.10-management
+  #   ports:
+  #     - "5672:5672"
+  #     - "15672:15672"
+  #   networks:
+  #     - clothesecommerce.1
+
+  eureka:
+    container_name: eureka
+    image: steeltoeoss/eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - timscapstone.1
+
+  # gateway: 
+  #   container_name: gateway
+  #   image: ssilverman23/capstone:latest
+  #   ports:
+  #     - "8888:8888"
+  #   networks:
+  #     - timscapstone.1
+
+  gateway:
+    container_name: gateway
+    build:
+      context: ./GatewayDemo
+      dockerfile: 2.dockerfile
+    image: gateway:1
+    ports:
+      - "8888:8888"
+    networks:
+      - timscapstone.1
+    depends_on:
+      - eureka
+    # deploy:
+    #   restart_policy:
+    #     condition: on-failure
+    #     delay: 5s
+    #     max_attempts: 3
+    #     window: 120s
+
+  auth-service:
+    # container_name: auth-service #remove this
+    build:
+      context: ./auth-service
+      dockerfile: auth.dockerfile
+    image: auth-service:1
+    ports:
+      # -  "7244:80" #remove this
+      - "80"
+    networks:
+      - timscapstone.1
+    depends_on:
+      - eureka
+      - sqlserver
+    # deploy:
+    #   replicas: 3
+    #   restart_policy:
+    #     condition: on-failure
+    #     delay: 5s
+    #     max_attempts: 3
+    #     window: 120s
+
+
+  # message-consumer:
+  #   container_name: message-consumer
+  #   build: 
+  #     context: ./spring-rabbitmq-consumer
+  #     dockerfile: Dockerfile
+  #   image: message-consumer:1
+  #   ports: 
+  #     - "9000:9000"
+  #   networks: 
+  #     - clothesecommerce.1
+  #   depends_on:
+  #     - message-queue
+
+  # message-producer:
+  #   # container_name: message-producer
+  #   build: 
+  #     context: ./spring-rabbitmq-producer
+  #     dockerfile: Dockerfile
+  #   image: message-producer:1
+  #   # ports: 
+  #   #   - "9001:9001"
+  #   networks: 
+  #     - clothesecommerce.1
+  #   depends_on:
+  #     - eureka
+  #     - message-queue
+  #   deploy:
+  #     replicas : 3
+
+  # filter-service:
+  #   # container_name: filter-service
+  #   build:
+  #     context: ./pythonFilter
+  #     dockerfile: DockerFile
+  #   image: filter-service:1
+  #   # ports:
+  #   #   - "8081:8080"
+  #   networks:
+  #     - clothesecommerce.1
+  #   depends_on:
+  #     - eureka
+  #   deploy:
+  #     replicas : 3
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 5s
+  #       max_attempts: 3
+  #       window: 120s
