@@ -190,3 +190,7 @@ C:\Users\Tim Culiomin\Documents\Classes\Q9 2022 Fall\2 Capstone\Capstone\auth-se
 C:\Users\Tim Culiomin\Documents\Classes\Q9 2022 Fall\2 Capstone\Capstone\auth-service\obj\Debug\net6.0\auth-service.pdb
 C:\Users\Tim Culiomin\Documents\Classes\Q9 2022 Fall\2 Capstone\Capstone\auth-service\obj\Debug\net6.0\auth-service.genruntimeconfig.cache
 C:\Users\Tim Culiomin\Documents\Classes\Q9 2022 Fall\2 Capstone\Capstone\auth-service\obj\Debug\net6.0\ref\auth-service.dll
+C:\Users\Tim Culiomin\Documents\Classes\Q9 2022 Fall\2 Capstone\Capstone\auth-service\bin\Debug\net6.0\MailKit.dll
+C:\Users\Tim Culiomin\Documents\Classes\Q9 2022 Fall\2 Capstone\Capstone\auth-service\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Tim Culiomin\Documents\Classes\Q9 2022 Fall\2 Capstone\Capstone\auth-service\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\Tim Culiomin\Documents\Classes\Q9 2022 Fall\2 Capstone\Capstone\auth-service\bin\Debug\net6.0\RabbitMQ.Client.dll

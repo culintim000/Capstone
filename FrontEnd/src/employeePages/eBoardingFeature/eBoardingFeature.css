@@ -1,0 +1,143 @@
+.boarding_background{
+    background:-moz-linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8DE1E6', endColorstr='#FF9FF1', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+
+
+
+
+    width: 300px;
+    height: auto;
+    max-height: 550px;
+    white-space: nowrap;
+
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+.name{
+    color: black;
+    font-weight: 800;
+    font-family: var(--font-family);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.age, .type{
+    color: black;
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.boarding_schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.boarding_schedule_children{
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.checkedIn{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 280px;
+}
+
+.dp_times{
+    margin-top: .5rem;
+}
+
+.animalInOurCare{
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+    width: 280px;
+}
+
+.boarding_price{
+    margin-top: 1rem;
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.boarding_email{
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.boarding_notes{
+    width: 270px;
+    max-width: 270px;
+}
+
+.boarding_notes p{
+    font-family: var(--font-family);
+    /*width: 100%;*/
+    /*max-width: 270px;*/
+    text-after-overflow: wrap;
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+    word-break: break-all;
+    white-space: normal;
+
+}
+
+.boarding_btn_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.boarding_btn{
+    padding: 0.25rem .5rem;
+    color: #fff;
+    background: black;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    border: white 1px solid;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

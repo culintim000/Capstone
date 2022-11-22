@@ -50,6 +50,24 @@ a {
 
 }
 
+.employee_navbar{
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+}
 
 .gradient__text {
     background: var(--gradient-text);

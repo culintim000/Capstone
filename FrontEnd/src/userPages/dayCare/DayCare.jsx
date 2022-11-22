@@ -7,6 +7,8 @@ import {Footer} from "../../containers";
 import {decodeToken} from "react-jwt";
 import {useCookies} from "react-cookie";
 import {useNavigate} from "react-router-dom";
+import {saveAs} from "file-saver";
+import axios from "axios";
 
 
 function DayCare() {
@@ -16,8 +18,9 @@ function DayCare() {
     const [cookies, setCookie] = useCookies(['user']);
     const [animal, setAnimal] = useState("Dog");
     const [initPrice, setInitPrice] = useState(4);
+    const [myOwnFile, setMyOwnFile] = useState();
     const [appointmentDetails, setAppointmentDetails] = useState({
-        bookingType: "Day Care",
+        bookingType: "Daycare",
         animalName: "",
         animalAge: "",
         dropOff: "6 a.m.",
@@ -26,7 +29,8 @@ function DayCare() {
         startDate: currentDate,
         endDate: currentDate,
         price: initPrice,
-        animalType: animal
+        animalType: animal,
+        animalPicture: undefined,
     });
     const navigate = useNavigate();
 
@@ -37,6 +41,10 @@ function DayCare() {
                 <h2 className={"login"} style={{color: "#ADD8E6"}}><a href="/sign-in">Sign In</a></h2>
             </div>
         )
+    }
+
+    const SaveFile = (e) => {
+        setAppointmentDetails({...appointmentDetails, animalPicture: e.target.files[0]});
     }
 
     const decodedToken = decodeToken(cookies.token);
@@ -204,6 +212,10 @@ return (
                         </div>
                     </div>
                 </div>
+                <div className={"fileUpload_container"}>
+                    <label>Choose a picture of your animal</label>
+                    <input type="file" onChange={event => SaveFile(event)} accept=".jpg, .jpeg, .png" />
+                </div>
                 <div className={"form_container"}>
                     <label>Anything else we should know?</label>
                     <TextareaAutosize placeholder="Notes" onChange={e => setAppointmentDetails({
@@ -211,7 +223,8 @@ return (
                         notes: e.target.value
                     })}/>
                 </div>
-                <div className="button-container input-container">
+
+                <div className="button-container boarding_continue_to_payment">
                     <button type="submit">Continue to Payment</button>
                 </div>
             </form>

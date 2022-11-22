@@ -3,11 +3,15 @@ using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using System.Text;
 using LoginSQL;
+using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using MimeKit;
+using RabbitMQ.Client;
 
 namespace auth_service
 {
@@ -86,7 +90,8 @@ namespace auth_service
             List<Claim> claims = new List<Claim>
             {
                 new Claim("Name", user.Name),
-                new Claim("Role", role)
+                new Claim("Role", role),
+                new Claim("Email", user.Email)
             };
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
@@ -103,5 +108,122 @@ namespace auth_service
 
             return jwt;
         }
+        
+        [HttpPost]
+        [Route("getUser")]
+        public async Task<ActionResult> GetUser(string email)
+        {
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Email.Contains(email));
+            if (user == null)
+            {
+                return BadRequest("User doesn't exist");
+            }
+            
+            var userDto = new UserReturnView(user.Name, user.Email, user.Number, user.isWorker);
+
+            return Ok(userDto);
+        }
+        
+        [HttpPost]
+        [Route("makeWorker")]
+        public async Task<ActionResult> MakeWorker(string email)
+        {
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return BadRequest("User doesn't exist");
+            }
+
+            user.isWorker = true;
+            await _db.SaveChangesAsync();
+            return Ok();
+        }
+        
+        [HttpPost]
+        [Route("removeWorker")]
+        public async Task<ActionResult> RemoveWorker(string email)
+        {
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return BadRequest("User doesn't exist");
+            }
+
+            user.isWorker = false;
+            await _db.SaveChangesAsync();
+            return Ok();
+        }
+        
+        [HttpPost]
+        [Route("RecoverPassword")]
+        public async Task<ActionResult> RecoverPassword(string email)
+        {
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return BadRequest("User doesn't exist");
+            }
+
+            string verificationCode = CreatePassword(15);
+
+            user.Password = SecurePasswordHasher.Hash(verificationCode);
+            await _db.SaveChangesAsync();
+
+            var factory = new ConnectionFactory() { HostName = "message-queue" };
+            using(var connection = factory.CreateConnection())
+            using(var channel = connection.CreateModel())
+            {
+                channel.QueueDeclare(queue: "hello",
+                    durable: false,
+                    exclusive: false,
+                    autoDelete: false,
+                    arguments: null);
+
+                string message = email + " " + verificationCode;
+                var body = Encoding.UTF8.GetBytes(message);
+
+                channel.BasicPublish(exchange: "",
+                    routingKey: "hello",
+                    basicProperties: null,
+                    body: body);
+                Console.WriteLine(" [x] Sent {0}", message);
+            }
+
+            return Ok("Verification code sent to your email.");
+        }
+        
+        public string CreatePassword(int length)
+        {
+            const string valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+            StringBuilder res = new StringBuilder();
+            Random rnd = new Random();
+            while (0 < length--)
+            {
+                res.Append(valid[rnd.Next(valid.Length)]);
+            }
+            return res.ToString();
+        }
+
+        [HttpPost]
+        [Route("ChangePassword")]
+        public async Task<ActionResult> ChangePassword(string email, string verificationCode, string password)
+        {
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return BadRequest("User doesn't exist");
+            }
+            
+            if (!SecurePasswordHasher.Verify(verificationCode, user.Password))
+            {
+                return BadRequest("Wrong Verification Code.");
+            }
+
+            user.Password = SecurePasswordHasher.Hash(password);
+            await _db.SaveChangesAsync();
+            
+            return Ok("Changed password");
+        }
+        
     }
 }

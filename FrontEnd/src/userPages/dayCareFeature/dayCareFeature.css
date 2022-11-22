@@ -1,0 +1,83 @@
+.day_care_user{
+    background:-moz-linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EE82EE', endColorstr='#008FFF', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+
+
+    width: 280px;
+    height: 410px;
+    white-space: nowrap;
+
+    border-radius: 15px;
+    margin: 1rem;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+}
+
+/*.day_care * {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.name{
+    color: black;
+    font-weight: 800;
+    font-family: var(--font-family);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.age, .type{
+    color: black;
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.daycare_schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.dc_schedule{
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.checkedIn{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 280px;
+}

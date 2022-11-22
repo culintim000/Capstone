@@ -1,0 +1,102 @@
+.boarding_background_user{
+    background:-moz-linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8DE1E6', endColorstr='#FF9FF1', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
+
+    width: 280px;
+    height: 380px;
+    white-space: nowrap;
+
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+.name{
+    color: black;
+    font-weight: 800;
+    font-family: var(--font-family);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.age, .type{
+    color: black;
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 1rem;
+    font-weight: 1000;
+}
+
+p{
+font-weight: 1000;   }
+
+.boarding_schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.boarding_schedule_children{
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.checkedIn{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 280px;
+}
+
+.dp_times{
+    margin-top: .5rem;
+}
+
+.outer_profile_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.profileImage{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImage img {
+    max-width: 100%;
+    max-height: 100%;
+
+    border-radius: 25px;
+    border: black 2px solid;
+}

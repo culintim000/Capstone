@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Eua/68XCblFkzd4Ekn3IWemXyVNueQWPhbTuB96RtE42yYJW6Ec8SavhtQrMtT6Tx2QlV1400UY38pyt2zfV6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tim Culiomin\\Documents\\Classes\\Q9 2022 Fall\\2 Capstone\\Capstone\\RecoverPasswordService\\RecoverPasswordService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\mailkit\\3.4.2\\mailkit.3.4.2.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\mimekit\\3.4.2\\mimekit.3.4.2.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.0\\system.security.cryptography.pkcs.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

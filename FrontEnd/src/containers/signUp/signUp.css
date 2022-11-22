@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 2rem;
+    width: 16rem;
 }
 
 .input-container label {
@@ -57,4 +58,15 @@
     border-radius: 5px;
     /*width: 100%;*/
     width: auto;
+}
+
+.forgot_password_link{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.forgot_password_link a{
+    color: #3f95a6;
+    text-decoration: none;
 }

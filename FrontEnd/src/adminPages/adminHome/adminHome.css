@@ -1,0 +1,13 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem;
+}

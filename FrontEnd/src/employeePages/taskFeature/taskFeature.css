@@ -1,0 +1,113 @@
+.task_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border: black 1px solid;
+    border-radius: 25px;
+    padding: .5rem;
+
+    background:-moz-linear-gradient(90deg, rgba(7, 131, 147, 1) 0%, rgba(190, 85, 190, 1) 100%);
+    background:-webkit-linear-gradient(90deg, rgba(7, 131, 147, 1) 0%, rgba(190, 85, 190, 1) 100%);
+    background:-o-linear-gradient(90deg, rgba(7, 131, 147, 1) 0%, rgba(190, 85, 190, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BE55BE', endColorstr='#078393', GradientType=0 );
+    background:-ms-linear-gradient(90deg, rgba(7, 131, 147, 1) 0%, rgba(190, 85, 190, 1) 100%);
+    background:linear-gradient(90deg, rgba(7, 131, 147, 1) 0%, rgba(190, 85, 190, 1) 100%);
+
+}
+
+.task_name{
+    display: flex;
+
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.task_detail {
+    font-family: var(--font-family);
+    color: black;
+    /*font-weight: 500;*/
+}
+
+.middle {
+    margin-top: 1rem;
+    margin-left: 4.5rem;
+
+}
+
+.task_profileImage {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task_profileImage img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+    border: black 2px solid;
+}
+
+.task_description{
+    /*font-family: var(--font-family);*/
+    text-after-overflow: wrap;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.task_container button{
+    padding: 0.2rem .5rem;
+    color: #fff;
+    background: black;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    border: white 1px solid;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: .2rem;
+}
+
+.main_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reschedule_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sep{
+    margin: .2rem;
+    border-top: 3px solid black;
+}
+
+.twoSides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twoSides{
+    font-size: 19px;
+}
+
+.task_description{
+    font-size: 19px;
+}
+
+.rightSide p {
+    font-family: var(--font-family);
+    color: black;
+}

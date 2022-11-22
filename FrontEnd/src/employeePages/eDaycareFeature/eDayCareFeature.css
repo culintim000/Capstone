@@ -1,0 +1,129 @@
+.day_care{
+    background:-moz-linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EE82EE', endColorstr='#008FFF', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+
+
+    width: 300px;
+    height: auto;
+    max-height: 600px;
+    white-space: nowrap;
+
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.name{
+    color: black;
+    font-weight: 800;
+    font-family: var(--font-family);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.age, .type{
+    color: black;
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.daycare_schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.dc_schedule{
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.animalInOurCare{
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+    width: 280px;
+}
+
+.day_care_price{
+    margin-top: 1rem;
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.day_care_email{
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.day_care_notes{
+    width: 270px;
+    max-width: 270px;
+}
+
+.day_care_notes p{
+    font-family: var(--font-family);
+    text-after-overflow: wrap;
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+    word-break: break-all;
+    white-space: normal;
+
+    font-weight: 700;
+
+}
+
+.day_care_btn_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.day_care_btn{
+    padding: 0.25rem .5rem;
+    color: #fff;
+    background: black;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    border: white 1px solid;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

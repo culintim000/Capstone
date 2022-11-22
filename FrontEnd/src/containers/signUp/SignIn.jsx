@@ -25,10 +25,25 @@ function SignIn(props) {
 
         if (response.status === 200) {
             const data = await response.json();
+            // console.log(data.token);
+            // console.log(decodeToken(data.token).headers);
 
-            const decodedToken = decodeToken(data.token);
             setCookie('token', data.token, { path: '/' });
-            navigate("/user/home", {state:{data:data}});
+
+            if (data.isAdmin){
+                navigate("/admin/home", {state:{data:data}});
+            }
+            else if (data.isWorker){
+                navigate("/employee/home", {state:{data:data}});
+            }
+            else{
+                navigate("/user/home", {state:{data:data}});
+            }
+            // console.log(data);
+            // if (decodedToken.Role === "User") {
+            //     navigate("/user/home", {state:{data:data}});
+            // }
+
 
             return;
         }
@@ -61,7 +76,12 @@ function SignIn(props) {
                     <div className="button-container input-container">
                         <button type="submit">Sign In</button>
                     </div>
+                    <div className={"forgot_password_link"}>
+                        <a href="/forgot-password">Forgot Password?</a>
+                    </div>
+
                 </form>
+
             </div>
         </div>
     )

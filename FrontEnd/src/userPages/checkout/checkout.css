@@ -1,9 +1,19 @@
-.outer{
+.outer_checkout{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
-.form{
+.form_checkout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_checkout form{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -42,20 +52,36 @@
 .expDate{
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+}
+
+.input-container_checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    width: 16rem;
+}
+
+.input-container_checkout_small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 9rem;
 }
 
 .expDate input{
+    margin-right: .25rem;
     width: 50px;
-}
-
-.slash{
-    background-color: white;
-    color: black;
 }
 
 .dateAndCvv{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 30rem;
+    margin-left: 4rem;
 }
 
 .cvv{

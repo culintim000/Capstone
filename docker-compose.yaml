@@ -19,14 +19,14 @@ services:
       SA_PASSWORD: "abc123!!@"
       ACCEPT_EULA: "Y"
 
-  # message-queue:
-  #   container_name: message-queue
-  #   image: rabbitmq:3.10-management
-  #   ports:
-  #     - "5672:5672"
-  #     - "15672:15672"
-  #   networks:
-  #     - clothesecommerce.1
+  message-queue:
+    container_name: message-queue
+    image: rabbitmq:3.10-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - timscapstone.1
 
   eureka:
     container_name: eureka
@@ -36,13 +36,13 @@ services:
     networks:
       - timscapstone.1
 
-  # gateway: 
-  #   container_name: gateway
-  #   image: ssilverman23/capstone:latest
-  #   ports:
-  #     - "8888:8888"
-  #   networks:
-  #     - timscapstone.1
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    ports: 
+      - "27027:27017"
+    networks:
+      - timscapstone.1
 
   gateway:
     container_name: gateway
@@ -84,6 +84,34 @@ services:
     #     delay: 5s
     #     max_attempts: 3
     #     window: 120s
+
+  # booking-service:
+  #   build: 
+  #     context: ./BookingService
+  #     dockerfile: Dockerfile
+  #   image: booking-service:1
+  #   ports: 
+  #     - "80"
+  #   networks:
+  #     - timscapstone.1
+  #   depends_on:
+  #     - eureka
+  #     - mongodb
+  #     - message-queue
+
+
+  rabbit-consumer-service:
+    build: 
+      context: ./RabbitConsumerService
+      dockerfile: Dockerfile
+    image: rabbit-consumer-service:1
+    ports: 
+      - "80"
+    networks:
+      - timscapstone.1
+    depends_on:
+      - eureka
+      - message-queue
 
 
   # message-consumer:

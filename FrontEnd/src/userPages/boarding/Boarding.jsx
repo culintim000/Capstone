@@ -26,9 +26,12 @@ function Boarding() {
         startDate: currentDate,
         endDate: currentDate,
         price: initPrice,
-        animalType: animal
+        animalType: animal,
+        animalPicture: undefined
     });
     const navigate = useNavigate();
+
+    // console.log(appointmentDetails);
 
     if (cookies.token === undefined) {
         return (
@@ -37,6 +40,10 @@ function Boarding() {
                 <h2 className={"login"} style={{color: "#ADD8E6"}}><a href="/sign-in">Sign In</a></h2>
             </div>
         )
+    }
+
+    const SaveFile = (e) => {
+        setAppointmentDetails({...appointmentDetails, animalPicture: e.target.files[0]});
     }
 
     const decodedToken = decodeToken(cookies.token);
@@ -56,13 +63,13 @@ function Boarding() {
         let pr = 0;
         if (event.target.value === "Dog" || event.target.value === "Cat" || event.target.value === "Sugar Glider") {
             setInitPrice(40);
-            pr = 4;
+            pr = 40;
         } else if (event.target.value === "Parrot" || event.target.value === "Lizard" || event.target.value === "Snake" || event.target.value === "Tortoise" || event.target.value === "Turtle" || event.target.value === "Ferret") {
             setInitPrice(30);
-            pr = 3;
+            pr = 30;
         } else {
             setInitPrice(20);
-            pr = 2;
+            pr = 20;
         }
 
         setAppointmentDetails({...appointmentDetails, animalType: event.target.value, price: pr});
@@ -209,6 +216,10 @@ return (
                         </div>
                     </div>
                 </div>
+                <div className={"fileUpload_container"}>
+                    <label>Choose a picture of your animal</label>
+                    <input type="file" onChange={event => SaveFile(event)} accept=".jpg, .jpeg, .png" />
+                </div>
                 <div className={"form_container"}>
                     <label>Anything else we should know?</label>
                     <TextareaAutosize placeholder="Notes" onChange={e => setAppointmentDetails({
@@ -216,7 +227,7 @@ return (
                         notes: e.target.value
                     })}/>
                 </div>
-                <div className="button-container input-container">
+                <div className="button-container boarding_continue_to_payment">
                     <button type="submit">Continue to Payment</button>
                 </div>
             </form>

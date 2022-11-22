@@ -1,0 +1,156 @@
+[
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Check in",
+        "description": "Place the animal in the right enclosure make sure to check them in in the system",
+        "startHour": 6,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Feed",
+        "description": "Give food and water to the sugar glider",
+        "startHour": 8,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Entertain the sugar glider",
+        "description": "Give some attention to the sugar glider by holding it or letting it climb and fly around",
+        "startHour": 10,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Change toys",
+        "description": "Give some new toys to the sugar glider and take some old ones away",
+        "startHour": 11,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Clean up",
+        "description": "Clean the cage make sure there is no way of escaping when closing it",
+        "startHour": 12,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Feed",
+        "description": "Give food and water to the sugar glider",
+        "startHour": 14,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Play with sugar glider",
+        "description": "Let the sugar glider fly around keep a close eye on it",
+        "startHour": 15,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Change toys",
+        "description": "Give some new toys to the sugar glider and take some old ones away",
+        "startHour": 17,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Feed",
+        "description": "Give food and water to the sugar glider",
+        "startHour": 19,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Clean up and get ready for bed",
+        "description": "Clean the cage and make sure its ready for the night",
+        "startHour": 20,
+        "startMinute": 0,
+        "isCompleted": false
+    },
+    {
+        "_AppointmentId": {
+            "timestamp": 1667322343,
+            "machine": 11222373,
+            "pid": -19279,
+            "increment": 7098691,
+            "creationTime": "2022-11-01T17:05:43Z"
+        },
+        "name": "Night check",
+        "description": "Make sure the cage environment is correct for the sugar glider",
+        "startHour": 22,
+        "startMinute": 0,
+        "isCompleted": false
+    }
+]

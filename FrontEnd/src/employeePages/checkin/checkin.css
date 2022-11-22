@@ -1,0 +1,48 @@
+.outer_checkin{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*width: 100%;*/
+}
+
+.searchDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.searchDiv input{
+    font-size: 17px;
+    width: 20rem;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    font-family: var(--font-family);
+}
+
+.searchDiv form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 90px;
+}
+
+.buttonSearch{
+    background: url("../../assets/searchIcon.png") no-repeat;
+    background-size: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+
+.separator{
+    margin-top: 1rem;
+}

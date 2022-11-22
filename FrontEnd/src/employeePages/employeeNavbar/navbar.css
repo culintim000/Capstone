@@ -1,0 +1,32 @@
+.logoutBtn Button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: black;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: white 1px solid;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.employee_navbar{
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 50% 0%, rgba(51, 114, 150, 1) 0%, rgba(8, 26, 113, 1) 100%);
+
+}

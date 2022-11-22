@@ -52,7 +52,7 @@ function SignUp() {
                     </div>
                     <div className="input-container">
                         <label>Phone Number </label>
-                        <input type="tel" name="number" onChange={e => setUser({...user, number: e.target.value})} value={user.number} required />
+                        <input type="number" name="number" onChange={e => setUser({...user, number: e.target.value.slice(0, 11)})} value={user.number}/>
                     </div>
                     <div className="input-container">
                         <label>Full Name </label>

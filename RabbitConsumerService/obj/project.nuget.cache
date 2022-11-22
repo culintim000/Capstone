@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "udAbd24N3I3/vXGb/lkbW/7GQODdDv1VEYpjjHNJj/jfo6F1IT2dWOhiXTKuVcYZxyHT5KeXVWa6mk6moKFwXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tim Culiomin\\Documents\\Classes\\Q9 2022 Fall\\2 Capstone\\Capstone\\RabbitConsumerService\\RabbitConsumerService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\mailkit\\3.4.2\\mailkit.3.4.2.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\mimekit\\3.4.2\\mimekit.3.4.2.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.0\\system.security.cryptography.pkcs.6.0.0.nupkg.sha512",
+    "C:\\Users\\Tim Culiomin\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
