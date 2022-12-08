@@ -19,7 +19,7 @@ function UserHome() {
             method: 'GET'
         };
 
-        const response = await fetch(' http://localhost:5241/book/daycares?email=' + decodedToken.Email, requestOptions)
+        const response = await fetch('http://localhost:8888/bookingservice/book/daycares?email=' + decodedToken.Email, requestOptions)
         // console.log(response);
         const data = await response.json();
         // console.log(data);
@@ -27,7 +27,7 @@ function UserHome() {
         setDayCares(data);
         // console.log(dayCares);
 
-        const response2 = await fetch(' http://localhost:5241/book/boardings?email=' + decodedToken.Email, requestOptions)
+        const response2 = await fetch(' http://localhost:8888/bookingservice/book/boardings?email=' + decodedToken.Email, requestOptions)
         const data2 = await response2.json();
         setBoardings(data2);
     }

@@ -71,7 +71,7 @@ const EBoardingFeature = ({
             method: 'POST'
         };
 
-        const response = await fetch(' http://localhost:5241/book/checkInBoarding?email=' + ownerEmail + '&animalName=' + animalName, requestOptions)
+        const response = await fetch(' http://localhost:8888/bookingservice/book/checkInBoarding?email=' + ownerEmail + '&animalName=' + animalName, requestOptions)
         // const data = await response.json();
         // console.log(data);
         // console.log(response)
@@ -91,7 +91,7 @@ const EBoardingFeature = ({
             method: 'POST'
         };
 
-        const response = await fetch('http://localhost:5241/book/checkOutBoarding?email=' + ownerEmail + "&animalName=" + animalName, requestOptions)
+        const response = await fetch('http://localhost:8888/bookingservice/book/checkOutBoarding?email=' + ownerEmail + "&animalName=" + animalName, requestOptions)
         // const data = await response.json();
         // console.log(data);
         // console.log(response)

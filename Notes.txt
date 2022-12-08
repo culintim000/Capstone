@@ -1,0 +1,15 @@
+ADMIN
+culintim000@gmail.com
+pass
+==============================
+
+EMPLOYEE
+tculiomin@student.neumont.edu
+pass
+===============================
+
+USER
+cultim000@gmail.com
+pass
+===============================
+

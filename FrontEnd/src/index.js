@@ -8,7 +8,8 @@ import {Animals, Navbar} from './components'
 import {Footer, Services, Header, WhyUs, Amenities, SignUp, SignIn, ForgotPassword} from './containers'
 import {UserHome, DayCare, Checkout, Boarding} from "./userPages";
 import {EmployeeHome, CheckIn, CheckOut, MyTasks} from "./employeePages";
-import {AdminHome} from "./adminPages";
+import {AdminHome, EditShop} from "./adminPages";
+import {ShopHome, Cart, ShopCheckout} from "./shop";
 
 ReactDOM.render(
     <CookiesProvider>
@@ -29,6 +30,10 @@ ReactDOM.render(
             <Route path="/employee/myTasks" element={<MyTasks/>}/>
             <Route path="/admin/home" element={<AdminHome/>}/>
             <Route path="/forgot-password" element={<ForgotPassword/>}/>
+            <Route path="/admin/shop" element={<EditShop/>}/>
+            <Route path="/shop" element={<ShopHome/>}/>
+            <Route path="/shop/cart" element={<Cart/>}/>
+            <Route path="/shop/checkout" element={<ShopCheckout/>}/>
         </Routes>
     </Router>
     </CookiesProvider>,

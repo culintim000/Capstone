@@ -65,7 +65,7 @@ const TaskFeature = ({appointmentId, name, description, startHour, startMinute, 
             })
         };
 
-        const response = await fetch('http://localhost:5241/emp/pickUpTask?email=' + decodeToken(cookies.token).Email, requestOptions)
+        const response = await fetch('http://localhost:8888/bookingservice/emp/pickUpTask?email=' + decodeToken(cookies.token).Email, requestOptions)
         if (response.status !== 200){
             alert("Could not pick up the task")
         }
@@ -88,10 +88,11 @@ const TaskFeature = ({appointmentId, name, description, startHour, startMinute, 
             })
         };
 
-        const response = await fetch('http://localhost:5241/emp/completeTask?email=' + decodeToken(cookies.token).Email, requestOptions)
+        const response = await fetch('http://localhost:8888/bookingservice/emp/completeTask?email=' + decodeToken(cookies.token).Email, requestOptions)
         if (response.status !== 200){
             alert("Could not pick up the task")
         }
+        setDisableButtons(true);
     }
 
     function Reschedule() {
@@ -118,7 +119,7 @@ const TaskFeature = ({appointmentId, name, description, startHour, startMinute, 
             })
         };
 
-        const response = await fetch('http://localhost:5241/emp/dropTask?email=' + decodeToken(cookies.token).Email, requestOptions)
+        const response = await fetch('http://localhost:8888/bookingservice/emp/dropTask?email=' + decodeToken(cookies.token).Email, requestOptions)
 
         if (response.status !== 200){
             alert("Could not drop the task")
@@ -131,7 +132,7 @@ const TaskFeature = ({appointmentId, name, description, startHour, startMinute, 
             method: 'GET',
         };
 
-        const response = await fetch(' http://localhost:5241/book/getCheckedInDaycareWithId?id=' + appointmentId, requestOptions)
+        const response = await fetch(' http://localhost:8888/bookingservice/book/getCheckedInDaycareWithId?id=' + appointmentId, requestOptions)
 
         if (response.status === 200) {
             const data = await response.json();
@@ -142,7 +143,7 @@ const TaskFeature = ({appointmentId, name, description, startHour, startMinute, 
                 method: 'GET',
             };
 
-            const response2 = await fetch(' http://localhost:5241/book/getCheckedInBoardingWithId?id=' + appointmentId, requestOptions)
+            const response2 = await fetch(' http://localhost:8888/bookingservice/book/getCheckedInBoardingWithId?id=' + appointmentId, requestOptions)
             if (response2.status === 200) {
                 const data2 = await response2.json();
                 // console.log(data2);
@@ -180,9 +181,9 @@ const TaskFeature = ({appointmentId, name, description, startHour, startMinute, 
             })
         };
 
-        const response = await fetch('http://localhost:5241/emp/rescheduleTask?email=' + decodeToken(cookies.token).Email + '&hour=' + hour + '&minute=' + minute, requestOptions)
+        const response = await fetch('http://localhost:8888/bookingservice/emp/rescheduleTask?email=' + decodeToken(cookies.token).Email + '&hour=' + hour + '&minute=' + minute, requestOptions)
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
 
         if (response.status !== 200){
             alert("Could not drop the task")
@@ -267,9 +268,9 @@ const TaskFeature = ({appointmentId, name, description, startHour, startMinute, 
                     <button hidden={noReschedule} value={2} onClick={RescheduleTask}>2 hr</button>
                     <button hidden={noReschedule} value={3} onClick={RescheduleTask}>3 hr</button>
                 </div>
-                <div className={"cancel_btn"}>
-                    <button hidden={noReschedule}>Cancel Task</button>
-                </div>
+                {/*<div className={"cancel_btn"}>*/}
+                {/*    <button hidden={noReschedule}>Cancel Task</button>*/}
+                {/*</div>*/}
             </div>
         </div>
     );

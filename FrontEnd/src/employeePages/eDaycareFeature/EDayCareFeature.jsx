@@ -64,7 +64,7 @@ const EDayCareFeature = ({ animalName, animalAge, animalType, pricePerHour,
             method: 'POST'
         };
 
-        const response = await fetch(' http://localhost:5241/book/checkInDaycare?email=' + ownerEmail + '&animalName=' + animalName, requestOptions)
+        const response = await fetch(' http://localhost:8888/bookingservice/book/checkInDaycare?email=' + ownerEmail + '&animalName=' + animalName, requestOptions)
         // const data = await response.json();
         // console.log(data);
         console.log(response)
@@ -87,7 +87,7 @@ const EDayCareFeature = ({ animalName, animalAge, animalType, pricePerHour,
             method: 'POST'
         };
 
-        const response = await fetch('http://localhost:5241/book/checkOutDaycare?email=' + ownerEmail + "&animalName=" + animalName, requestOptions)
+        const response = await fetch('http://localhost:8888/bookingservice/book/checkOutDaycare?email=' + ownerEmail + "&animalName=" + animalName, requestOptions)
         // const data = await response.json();
         // console.log(data);
         // console.log(response)

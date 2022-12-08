@@ -13,7 +13,7 @@ function MyTasks () {
             method: 'GET'
         };
 
-        const response = await fetch(' http://localhost:5241/emp/getEmployeeTasks?email=' + decodeToken(cookies.token).Email, requestOptions)
+        const response = await fetch(' http://localhost:8888/bookingservice/emp/getEmployeeTasks?email=' + decodeToken(cookies.token).Email, requestOptions)
         const data = await response.json();
         // console.log(data);
         setTasks(data);

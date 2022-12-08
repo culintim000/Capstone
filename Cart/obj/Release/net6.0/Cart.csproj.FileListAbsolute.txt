@@ -1,0 +1,84 @@
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\appsettings.Development.json
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\appsettings.json
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.exe
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.deps.json
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.runtimeconfig.json
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.pdb
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\DnsClient.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\MongoDB.Bson.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\MongoDB.Driver.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\MongoDB.Driver.Core.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\SharpCompress.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\linux\native\libsnappy64.so
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\linux\native\libzstd.so
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\osx\native\libzstd.dylib
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\win\native\libzstd.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\win\native\snappy32.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\win\native\snappy64.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.csproj.AssemblyReference.cache
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.AssemblyInfoInputs.cache
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.AssemblyInfo.cs
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.csproj.CoreCompileInputs.cache
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\staticwebassets.build.json
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\staticwebassets.development.json
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\scopedcss\bundle\Cart.styles.css
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.csproj.CopyComplete
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\refint\Cart.dll
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.pdb
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.genruntimeconfig.cache
+C:\Users\dgutierrez\SEN300\e-commerce_microservice\Cart\obj\Release\net6.0\ref\Cart.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\appsettings.Development.json
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\appsettings.json
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.exe
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.deps.json
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.runtimeconfig.json
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Cart.pdb
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\DnsClient.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\MongoDB.Bson.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\MongoDB.Driver.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\MongoDB.Driver.Core.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\SharpCompress.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\linux\native\libsnappy64.so
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\linux\native\libzstd.so
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\osx\native\libzstd.dylib
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\win\native\libzstd.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\win\native\snappy32.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\win\native\snappy64.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\bin\Release\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.csproj.AssemblyReference.cache
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.AssemblyInfoInputs.cache
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.AssemblyInfo.cs
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.csproj.CoreCompileInputs.cache
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\staticwebassets.build.json
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\staticwebassets.development.json
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\scopedcss\bundle\Cart.styles.css
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.csproj.CopyComplete
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\refint\Cart.dll
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.pdb
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\Cart.genruntimeconfig.cache
+C:\Users\Tim Culiomin\Documents\GitHub\e-commerce_microservice\Cart\obj\Release\net6.0\ref\Cart.dll

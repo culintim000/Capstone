@@ -129,7 +129,7 @@ function Checkout() {
         };
 
 
-        const response = await fetch(' http://localhost:5241/book/', requestOptions)
+        const response = await fetch('http://localhost:8888/bookingservice/book/', requestOptions)
         const appointmentID = await response.text();
         setError("Payment Successful");
 

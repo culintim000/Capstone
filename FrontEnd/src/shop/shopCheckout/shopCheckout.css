@@ -1,0 +1,18 @@
+.shop_receipt{
+    display: inline-block;
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.outer_receipt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.receipt_one_item {
+    margin-top: 1rem;
+}

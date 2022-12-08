@@ -17,8 +17,9 @@ function EmployeeHome () {
                 method: 'GET'
             };
 
-            const response = await fetch(' http://localhost:5241/emp/tasks', requestOptions)
+            const response = await fetch('http://localhost:8888/bookingservice/emp/tasks', requestOptions)
             const data = await response.json();
+            console.log(data);
             setTasks(data);
         }
         FetchTasks();
@@ -33,11 +34,16 @@ function EmployeeHome () {
         //                                startMinute={"tasks[i].startMinute"} isCompleted={"tasks[i].isCompleted"}/>)
 
         for (let i = 0; i < tasks.length; i++) {
-            console.log(tasks[i]);
+            // console.log(tasks[i]);
             taskFeatures.push(<TaskFeature appointmentId={tasks[i]._AppointmentId} name={tasks[i].name}
                                            description={tasks[i].description} startHour={tasks[i].startHour}
                                            startMinute={tasks[i].startMinute} isCompleted={tasks[i].isCompleted} isPickedUp={tasks[i].isPickedUp}/>)
         }
+
+        if (taskFeatures.length === 0) {
+            return (<div className="noBookings">No tasks to display</div>)
+        }
+
         return (
             <div className={"taskList"}>
                 {taskFeatures}

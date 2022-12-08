@@ -1,0 +1,48 @@
+.outer_admin_item_feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.item_feature_admin{
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+    border: 3px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #D3D3D3;
+    width: 50%;
+}
+
+.item_feature_admin p{
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.item_feature_admin_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0 1rem 0;
+}
+
+.item_feature_admin button{
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: black;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.item_feature_admin button:hover{
+    background: black;
+    background: red;
+    cursor: pointer;
+}

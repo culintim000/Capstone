@@ -1,0 +1,49 @@
+.no_items{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.no_items p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e34236;
+}
+
+.checkout_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.checkout_btn Button{
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background: black;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        border: white 1px solid;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.total p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}

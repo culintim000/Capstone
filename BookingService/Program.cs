@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors();
 builder.Services.AddControllers();
-// builder.Services.AddDiscoveryClient(builder.Configuration); // for eureka
+builder.Services.AddDiscoveryClient(builder.Configuration); // for eureka
 
 var app = builder.Build();
 

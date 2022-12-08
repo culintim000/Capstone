@@ -77,88 +77,108 @@ services:
     depends_on:
       - eureka
       - sqlserver
-    # deploy:
-    #   replicas: 3
-    #   restart_policy:
-    #     condition: on-failure
-    #     delay: 5s
-    #     max_attempts: 3
-    #     window: 120s
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
 
-  # booking-service:
-  #   build: 
-  #     context: ./BookingService
-  #     dockerfile: Dockerfile
-  #   image: booking-service:1
-  #   ports: 
-  #     - "80"
-  #   networks:
-  #     - timscapstone.1
-  #   depends_on:
-  #     - eureka
-  #     - mongodb
-  #     - message-queue
-
-
-  rabbit-consumer-service:
+  booking-service:
     build: 
-      context: ./RabbitConsumerService
+      context: ./BookingService
       dockerfile: Dockerfile
-    image: rabbit-consumer-service:1
+    image: booking-service:1
     ports: 
       - "80"
     networks:
       - timscapstone.1
     depends_on:
       - eureka
+      - mongodb
       - message-queue
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
 
 
   # message-consumer:
   #   container_name: message-consumer
   #   build: 
-  #     context: ./spring-rabbitmq-consumer
+  #     context: ./RabbitConsumerService
   #     dockerfile: Dockerfile
   #   image: message-consumer:1
   #   ports: 
   #     - "9000:9000"
   #   networks: 
-  #     - clothesecommerce.1
+  #     - timscapstone.1
   #   depends_on:
   #     - message-queue
 
-  # message-producer:
-  #   # container_name: message-producer
-  #   build: 
-  #     context: ./spring-rabbitmq-producer
-  #     dockerfile: Dockerfile
-  #   image: message-producer:1
-  #   # ports: 
-  #   #   - "9001:9001"
-  #   networks: 
-  #     - clothesecommerce.1
-  #   depends_on:
-  #     - eureka
-  #     - message-queue
-  #   deploy:
-  #     replicas : 3
+  inventory-service:
+    build:
+      context: ./Inventory
+      dockerfile: 2.dockerfile
+    image: inventory-service:1
+    # ports:
+    #   # -  "7244:80" #remove this
+    #   - "7002:80"
+    networks:
+      - timscapstone.1
+    depends_on:
+      - eureka
+      - mongodb
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
 
-  # filter-service:
-  #   # container_name: filter-service
-  #   build:
-  #     context: ./pythonFilter
-  #     dockerfile: DockerFile
-  #   image: filter-service:1
-  #   # ports:
-  #   #   - "8081:8080"
-  #   networks:
-  #     - clothesecommerce.1
-  #   depends_on:
-  #     - eureka
-  #   deploy:
-  #     replicas : 3
-  #     restart_policy:
-  #       condition: on-failure
-  #       delay: 5s
-  #       max_attempts: 3
-  #       window: 120s
+
+  cart-service:
+      build:
+        context: ./Cart
+        dockerfile: 2.dockerfile
+      image: cart-service:1
+      # ports:
+      #   - "7000:80"
+      networks:
+        - timscapstone.1
+      depends_on:
+        - eureka
+        - mongodb
+      deploy:
+        replicas: 3
+        restart_policy:
+          condition: on-failure
+          delay: 5s
+          max_attempts: 3
+          window: 120s
+
+
+  checkout-service:
+      build:
+        context: ./Checkout
+        dockerfile: 2.dockerfile
+      image: checkout-service:1
+      # ports:
+      #   - "7001:80"
+      networks:
+        - timscapstone.1
+      depends_on:
+        - eureka
+        - mongodb
+      deploy:
+        replicas: 3
+        restart_policy:
+          condition: on-failure
+          delay: 5s
+          max_attempts: 3
+          window: 120s

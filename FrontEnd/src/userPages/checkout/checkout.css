@@ -3,6 +3,18 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    margin-top: 1rem;
+}
+
+.outer_checkout label{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.outer_checkout input{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
 }
 
 .form_checkout{
@@ -60,7 +72,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    margin: 1rem;
     width: 16rem;
 }
 

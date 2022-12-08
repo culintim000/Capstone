@@ -105,6 +105,25 @@ public class BookingController : ControllerBase
         }
     }
 
+    [HttpGet]
+    [Route("getUserId")]
+    public async Task<ActionResult<string>> GetUserId(string email)
+    {
+        User user = _col.Find(u => u.Email == email).FirstOrDefault();
+        if (user == null)
+        {
+            var newUser = new User
+            {
+                Email = email,
+                BoardingBookings = new List<Boarding>(),
+                DayCareBookings = new List<Daycare>()
+            }; 
+            await _col.InsertOneAsync(newUser);
+            return newUser._id.ToString();
+        }
+        return Ok(user._id.ToString());
+    }
+    
     [HttpGet("daycares")]
     public async Task<ActionResult<List<DaycareForDisplaying>>> GetDayCaresForDisplay(string email)
     {

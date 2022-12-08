@@ -16,12 +16,12 @@ function Checkin() {
             method: 'GET'
         };
 
-        const response = await fetch(' http://localhost:5241/book/todaysDaycares', requestOptions)
+        const response = await fetch(' http://localhost:8888/bookingservice/book/todaysDaycares', requestOptions)
         const data = await response.json();
         setDayCares(data);
         // console.log(data);
 
-        const response2 = await fetch(' http://localhost:5241/book/todaysBoardings', requestOptions)
+        const response2 = await fetch(' http://localhost:8888/bookingservice/book/todaysBoardings', requestOptions)
         const data2 = await response2.json();
         setBoardings(data2);
         // console.log(data2);
@@ -37,7 +37,7 @@ function Checkin() {
         const DayCareFeatures = [];
 
         for (let i = 0; i < dayCares.length; i++) {
-            console.log(dayCares[i]);
+            // console.log(dayCares[i]);
             DayCareFeatures.push(<EDayCareFeature animalName={dayCares[i].animalName}
                                                   animalAge={dayCares[i].animalAge}
                                                   animalType={dayCares[i].animalType}
@@ -97,12 +97,12 @@ function Checkin() {
             method: 'GET'
         };
 
-        const response = await fetch(' http://localhost:5241/book/searchForBoardings?email=' + email, requestOptions)
+        const response = await fetch(' http://localhost:8888/bookingservice/book/searchForBoardings?email=' + email, requestOptions)
         const data = await response.json();
         // setDayCares("");
         setBoardings(data);
 
-        const response2 = await fetch(' http://localhost:5241/book/searchForDayCares?email=' + email, requestOptions)
+        const response2 = await fetch(' http://localhost:8888/bookingservice/book/searchForDayCares?email=' + email, requestOptions)
         const data2 = await response2.json();
         // setDayCares("");
         setDayCares(data2);

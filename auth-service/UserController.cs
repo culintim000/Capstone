@@ -91,7 +91,8 @@ namespace auth_service
             {
                 new Claim("Name", user.Name),
                 new Claim("Role", role),
-                new Claim("Email", user.Email)
+                new Claim("Email", user.Email),
+                new Claim("Id", user.Id.ToString())
             };
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(

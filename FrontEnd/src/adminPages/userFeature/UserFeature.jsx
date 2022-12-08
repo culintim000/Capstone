@@ -47,10 +47,10 @@ const UserFeature = ({email, isWorker, name, phone}) => {
             <div className={"userFeatureEmail"}>Users Email: {email}</div>
             <div className={"userFeaturePhone"}>Users Phone Number: {phone}</div>
             <div className={"userFeatureIsWorker"}>Is User an Employee: {isWorkerState.toString()}</div>
-            <div hidden={isWorkerState}>
+            <div className={"add_to_cart_button"} hidden={isWorkerState}>
                 <button className={"makeEmployee"} onClick={MakeEmployee}>Make into Employee</button>
             </div>
-            <div hidden={!isWorkerState}>
+            <div className={"add_to_cart_button"} hidden={!isWorkerState}>
                 <button className={"removeEmployee"} onClick={RemoveEmployee}>Remove Employee Status</button>
             </div>
 

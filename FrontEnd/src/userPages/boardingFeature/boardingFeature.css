@@ -16,7 +16,7 @@
     /* global 94%+ browsers support */
     background:linear-gradient(90deg, rgba(255, 159, 241, 1) 0%, rgba(141, 225, 230, 1) 100%);
 
-    width: 280px;
+    width: 290px;
     height: 380px;
     white-space: nowrap;
 
@@ -100,3 +100,4 @@ font-weight: 1000;   }
     border-radius: 25px;
     border: black 2px solid;
 }
+

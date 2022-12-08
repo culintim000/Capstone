@@ -7,10 +7,10 @@ import {useCookies} from "react-cookie";
 const Menu = () => (
     <>
         <p><a href="/admin/home">Admin Home</a></p>
+        <p><a href="/admin/shop">Edit Shop</a></p>
         <p><a href="/employee/home">Employee Home</a></p>
         <p><a href="/employee/checkin">Check In</a></p>
         <p><a href="/employee/checkout">Check Out</a></p>
-        <p><a href="/employee/myTasks">My Tasks</a></p>
     </>
 )
 

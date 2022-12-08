@@ -15,12 +15,12 @@ function Checkout() {
             method: 'GET'
         };
 
-        const response = await fetch(' http://localhost:5241/book/getCheckedInDayCares', requestOptions)
+        const response = await fetch(' http://localhost:8888/bookingservice/book/getCheckedInDayCares', requestOptions)
         const data = await response.json();
         setDayCares(data);
         // console.log(data);
 
-        const response2 = await fetch(' http://localhost:5241/book/getCheckedInBoardings', requestOptions)
+        const response2 = await fetch(' http://localhost:8888/bookingservice/book/getCheckedInBoardings', requestOptions)
         const data2 = await response2.json();
         setBoardings(data2);
         // console.log(data2);
@@ -30,7 +30,7 @@ function Checkout() {
         FetchBookings();
     }, []);
 
-    console.log(boardings);
+    // console.log(boardings);
 
     function ShowDayCares() {
         const DayCareFeatures = [];

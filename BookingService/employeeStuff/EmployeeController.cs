@@ -15,6 +15,7 @@ public class EmployeeController : ControllerBase
     private readonly IMongoCollection<CheckedInDayCare> _colCheckedInDayCares;
     private readonly IMongoCollection<CheckedInBoarding> _colCheckedInBoardings;
     private readonly IMongoCollection<EmployeeTasks> _colEmployeeTasks;
+    // static HttpClient client = new HttpClient();
 
     public EmployeeController(IConfiguration config)
     {
@@ -30,9 +31,21 @@ public class EmployeeController : ControllerBase
     [Route("tasks")]
     public async Task<ActionResult<List<TaskToDo>>> GetDayCareTasks()
     {
-        var fullTime = DateTime.Now;
+
+        // HttpResponseMessage response = await client.GetAsync("http://worldtimeapi.org/api/timezone/America/Denver");
+        // Console.WriteLine(response);
+        
+        var GMTTime = DateTime.Now;
+        var currentHour = GMTTime.Hour - 7;
+        if (currentHour < 0)
+        {
+            currentHour = 24 + currentHour;
+        }
+        
+        
         var checkedInDayCares = _colCheckedInDayCares.Find(_ => true).ToList();
 
+        Console.WriteLine("THE HOUR RIGHT NOW IS: "+currentHour);
         var dayCareTasks = new List<TaskToDo>();
         foreach (var checkedInDayCare in checkedInDayCares)
         {
@@ -40,7 +53,7 @@ public class EmployeeController : ControllerBase
             foreach (var task in checkedInDayCare.DayCareTasks)
             {
                 // Console.WriteLine(task.Name);
-                if (task.IsCompleted == false && task.IsPickedUp == false && task.StartHour < fullTime.Hour + 2)
+                if (task.IsCompleted == false && task.IsPickedUp == false && task.StartHour < currentHour + 2)
                 {
                     dayCareTasks.Add(task);
                 }
@@ -60,7 +73,7 @@ public class EmployeeController : ControllerBase
             {
                 if (checkedInBoarding.BoardingTasks[i].IsCompleted == false &&
                     checkedInBoarding.BoardingTasks[i].IsPickedUp == false &&
-                    checkedInBoarding.BoardingTasks[i].StartHour < fullTime.Hour + 2)
+                    checkedInBoarding.BoardingTasks[i].StartHour < currentHour + 2)
                 {
                     boardingTasks.Add(checkedInBoarding.BoardingTasks[i]);
                 }
