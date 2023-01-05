@@ -1,9 +1,9 @@
-ADMIN
+EMPLOYEE
 culintim000@gmail.com
 pass
 ==============================
 
-EMPLOYEE
+ADMIN
 tculiomin@student.neumont.edu
 pass
 ===============================

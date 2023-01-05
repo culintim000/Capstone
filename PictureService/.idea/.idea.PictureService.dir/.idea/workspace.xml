@@ -6,85 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb4b345-7e20-4cb7-97b7-e5d6b255d36d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/adminPages/editShop/EditShop.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/adminPages/editShop/editShop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/adminPages/itemFeature/ItemFeature.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/adminPages/itemFeature/itemFeature.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/cartItemFeature/CartItemFeature.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/itemFeature/ItemFeature.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/itemFeature/itemFeature.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/shopCart/ShopCart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/shopCart/shopCart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/shopCheckout/ShopCheckout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/shopCheckout/shopCheckout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/shopHome/ShopHome.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrontEnd/src/shop/shopHome/shopHome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RabbitConsumerService/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/bin/Debug/net6.0/BookingService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/bin/Debug/net6.0/BookingService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/bin/Debug/net6.0/BookingService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/bin/Debug/net6.0/BookingService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/bin/Debug/net6.0/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/bookings/BookingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/bookings/BookingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/employeeStuff/EmployeeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/employeeStuff/EmployeeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/BookingService.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/BookingService.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/BookingService.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/BookingService.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/BookingService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/BookingService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/BookingService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/BookingService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/project.razor.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/project.razor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/ref/BookingService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/ref/BookingService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/refint/BookingService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/obj/Debug/net6.0/refint/BookingService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingService/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingService/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/adminPages/adminNavBar/AdminNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/adminPages/adminNavBar/AdminNavbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/adminPages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/adminPages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/adminPages/userFeature/UserFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/adminPages/userFeature/UserFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/containers/signUp/SignIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/containers/signUp/SignIn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/employeePages/checkin/Checkin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/employeePages/checkin/Checkin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/employeePages/checkout/CheckOut.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/employeePages/checkout/CheckOut.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/employeePages/eBoardingFeature/EBoardingFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/employeePages/eBoardingFeature/EBoardingFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/employeePages/eDaycareFeature/EDayCareFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/employeePages/eDaycareFeature/EDayCareFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/employeePages/employeeHome/EmployeeHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/employeePages/employeeHome/EmployeeHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/employeePages/myTasks/MyTasks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/employeePages/myTasks/MyTasks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/employeePages/taskFeature/TaskFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/employeePages/taskFeature/TaskFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/userPages/boardingFeature/boardingFeature.css" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/userPages/boardingFeature/boardingFeature.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/userPages/checkout/Checkout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/userPages/checkout/Checkout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/userPages/checkout/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/userPages/checkout/checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/userPages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/userPages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/userPages/userHome/UserHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/userPages/userHome/UserHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/src/userPages/userNavbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/src/userPages/userNavbar/Navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnimalPictures/63920d617b4355ee5b9d597b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnimalPictures/63920da116763b2f61fde41f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnimalPictures/63920ff47266023f333f449b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PictureService.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PictureService.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalPictures/637c5034d036f5380a1fd5a9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalPictures/637c530bd036f5380a1fd5c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PictureController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PictureController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PictureService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PictureService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PictureService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PictureService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PictureService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PictureService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PictureService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PictureService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PictureService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PictureService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/project.razor.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/project.razor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PictureService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PictureService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PictureService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PictureService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PictureService.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PictureService.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PictureService.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PictureService.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/RabbitConsumerService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/RabbitConsumerService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/bin/Debug/net6.0/RabbitConsumerService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/bin/Debug/net6.0/RabbitConsumerService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/bin/Debug/net6.0/RabbitConsumerService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/bin/Debug/net6.0/RabbitConsumerService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/obj/Debug/net6.0/RabbitConsumerService.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/obj/Debug/net6.0/RabbitConsumerService.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/obj/Debug/net6.0/RabbitConsumerService.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/obj/Debug/net6.0/RabbitConsumerService.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/obj/Debug/net6.0/RabbitConsumerService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/obj/Debug/net6.0/RabbitConsumerService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitConsumerService/obj/Debug/net6.0/RabbitConsumerService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitConsumerService/obj/Debug/net6.0/RabbitConsumerService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecoverPasswordService/obj/Debug/net6.0/project.razor.json" beforeDir="false" afterPath="$PROJECT_DIR$/../RecoverPasswordService/obj/Debug/net6.0/project.razor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../auth-service/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../auth-service/obj/Debug/net6.0/auth-service.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/obj/Debug/net6.0/auth-service.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../auth-service/obj/Debug/net6.0/auth-service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/obj/Debug/net6.0/auth-service.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../auth-service/obj/Debug/net6.0/project.razor.json" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/obj/Debug/net6.0/project.razor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +96,8 @@
       <workItem from="1669172019842" duration="1802000" />
       <workItem from="1669828607305" duration="1251000" />
       <workItem from="1670257077398" duration="2285000" />
-      <workItem from="1670440820855" duration="2114000" />
+      <workItem from="1670440820855" duration="2309000" />
+      <workItem from="1672166683786" duration="778000" />
     </task>
     <servers />
   </component>
